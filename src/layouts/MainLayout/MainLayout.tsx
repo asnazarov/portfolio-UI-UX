@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import style from './style.module.scss';
 import Head from 'next/head';
 import Header from '../../components/Header/Header';
-import Footer from '../../components/Footer/Footer';
+// import Footer from '../../components/Footer/Footer';
 import Logo from '../../assets/headerLogo.svg';
 
 type OwnPropertyType = {
@@ -50,7 +50,7 @@ const MainLayout: FC<OwnPropertyType> = (props) => {
       </Head>
       <Header />
       {props.children}
-      <Footer />
+      {/*<Footer />*/}
     </div>
   );
 };
