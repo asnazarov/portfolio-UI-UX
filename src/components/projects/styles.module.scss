@@ -1,0 +1,17 @@
+
+.projects {
+  margin: 120px 50px 80px 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  @media screen and (max-width: 500px){
+    margin: 50px 20px;
+  }
+  .title {
+    color: #000;
+    text-transform: uppercase;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 86px;
+  }
+}

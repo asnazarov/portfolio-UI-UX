@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Header from "../src/components/Header/Header";
 import favicon from '../public/favicon.ico'
 import About from "../src/components/about/about";
+import Projects from "../src/components/projects/projects";
 
 export default function Home() {
   return (
@@ -15,7 +16,7 @@ export default function Home() {
       <Header/>
       <main>
         <About/>
-
+        {/*<Projects/>*/}
 
       </main>
 
