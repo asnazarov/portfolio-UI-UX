@@ -15,7 +15,10 @@
     max-width: 486px;
     width: 100%;
     min-height: 718px;
-    //border: 1px solid red;
+
+    @media screen and (max-width: 500px){
+      min-height: 518px;
+    }
 
     img {
       object-fit: cover;
