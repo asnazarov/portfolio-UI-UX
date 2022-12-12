@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  basePath: '/personal-portfolio'
+  // basePath: '/personal-portfolio'
 }
 
 module.exports = nextConfig
