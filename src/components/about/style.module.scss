@@ -1,0 +1,42 @@
+
+.about {
+  margin: 80px 50px;
+  min-height: 500px;
+  //border: 1px solid greenyellow;
+  display: flex;
+  gap: 0 170px;
+
+  .avatar {
+    position: relative;
+    max-width: 486px;
+    width: 100%;
+    min-height: 718px;
+    //border: 1px solid red;
+
+    img {
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  .content {
+
+    .hello {
+      text-transform: uppercase;
+      font-family: Inter, sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 86px;
+      margin-bottom: 32px;
+    }
+
+    .title {
+      text-transform: uppercase;
+      margin: 0;
+      font-family: Inter, sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 32px;
+    }
+  }
+}
