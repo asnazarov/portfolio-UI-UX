@@ -1,0 +1,19 @@
+@import "src/styles/mixins";
+@import "src/styles/vars";
+
+.headerSearch {
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    //circle {
+    //  stroke: $dark-blue-color;
+    //  transition: 0.3s;
+    //}
+    //
+    //path {
+    //  fill: $dark-blue-color;
+    //  transition: 0.3s;
+    //}
+  }
+}

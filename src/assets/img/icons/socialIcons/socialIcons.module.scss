@@ -1,0 +1,11 @@
+@import "../../../../styles/mixins";
+@import "../../../../styles/vars";
+
+
+.socialIcons {
+  transition: fill .3s linear;
+  &:hover {
+    fill: $orange-color;
+  }
+
+}

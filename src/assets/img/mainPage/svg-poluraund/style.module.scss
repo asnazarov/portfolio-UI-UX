@@ -1,0 +1,11 @@
+.pic {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s opacity, .55s visibility;
+  path {
+    transition: .3s;
+  }
+}

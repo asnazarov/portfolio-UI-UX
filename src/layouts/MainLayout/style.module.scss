@@ -1,0 +1,19 @@
+@import "../../styles/mixins";
+@import "../../styles/vars";
+
+.mainLayout {
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+.headerLayout {
+  @extend .container;
+  @include DinProBold;
+  height: 117px;
+  //border: 1px solid grey;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+

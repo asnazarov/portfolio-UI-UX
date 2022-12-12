@@ -1,0 +1,18 @@
+@import 'vars';
+
+%headBlock {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+%adminPanel {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+%adminItems {
+  border-radius: .2vw;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  //border: 1px solid #3f51b5;
+}
