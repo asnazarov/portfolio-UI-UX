@@ -5,6 +5,9 @@
   //border: 1px solid greenyellow;
   display: flex;
   gap: 0 170px;
+  @media screen and (max-width: 500px){
+    display: block;
+  }
 
   .avatar {
     position: relative;
