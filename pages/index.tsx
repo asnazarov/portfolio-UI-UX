@@ -4,8 +4,6 @@ import styles from '../styles/Home.module.scss'
 import Header from "../src/components/Header/Header";
 import vercel from '../public/vercel.svg'
 
-console.log(vercel)
-
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -68,12 +66,11 @@ export default function Home() {
         >
           Powered by{' '}
           <span className={styles.logo}>
-            {/*<img src={vercel} alt="alt"/>*/}
-            <Image src={vercel} alt="Vercel Logo" width={72} height={16} />
+            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
 
+            <img src={vercel} alt="alt"/>
           </span>
         </a>
-
       </footer>
     </div>
   )
