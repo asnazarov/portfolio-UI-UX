@@ -7,7 +7,7 @@ import Script from "next/script";
 import Contacts from "../src/features/Contacts/Contacts";
 import Projects from "../src/features/Projects/Projects";
 import StylesWeb from "../src/features/StylesWeb/StylesWeb";
-import photo from '../src/assets/img.png'
+import photo from '../src/assets/ecc8608ebb9732b0a74cc79493f1a31f.jpeg'
 
 export default function Home() {
   return (
