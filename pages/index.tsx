@@ -13,8 +13,8 @@ export default function Home() {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <title>Портфолио А.С. Назарова</title>
-        <meta property="og:image"
-              content={'../src/assets/img.png'}/>
+        {/*<meta property="og:image"*/}
+        {/*      content={'../src/assets/img.png'}/>*/}
         <meta name="description"
               content="Сюда пожно добавить описание страницы сайта столько слов сколько хош. Сюда пожно добавить описание страницы сайта столько слов сколько хош.  Сюда пожно добавить описание страницы сайта столько слов сколько хош.  Сюда пожно добавить описание страницы сайта столько слов сколько хош.  Сюда пожно добавить описание страницы сайта столько слов сколько хош.   "/>
         <link rel="shortcut icon" href={favicon.src} type="image/x-icon"/>
