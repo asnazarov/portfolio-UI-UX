@@ -13,8 +13,9 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <title>Портфолио А.С. Назарова</title>
+        {/*<meta name="viewport" content="width=device-width, initial-scale=1"/>*/}
+        {/*<title>Портфолио А.С. Назарова</title>*/}
+        <meta property="og:title" content="My page title" key="title" />
         {/*<meta property="og:image"*/}
         {/*      content={'../src/assets/img.png'}/>*/}
         <meta property='og:description' content="Сюда пожно добавить описание страницы." />
