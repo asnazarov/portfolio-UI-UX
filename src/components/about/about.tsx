@@ -1,17 +1,17 @@
 import styles from './style.module.scss'
 import Image from "next/image";
 import ava from '../../assets/unsplash_C5NOq1BKlAk.png'
-import Arrow_1 from "../../assets/Arrow_1";
+import Arrow_1 from "../../assets/svg/Arrow_1";
 
 
 const About = () => {
 
   return (
     <section className={styles.about}>
-      <div className={styles.avatar}>
+      <div className={styles.about__avatar}>
         <Image src={ava} alt='avatar' fill/>
       </div>
-      <div className={styles.content}>
+      <div className={styles.about__content}>
         <p className={styles.hello}>Привет</p>
         <h2 className={styles.title}>Меня зовут Анастасия назарова.</h2>
         <h1 className={`${styles.title} ${styles.title_style}`}>Я Ui/Ux дизайнер из санкт-петербурга</h1>

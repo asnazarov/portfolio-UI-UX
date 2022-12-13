@@ -4,22 +4,21 @@
 .about {
   @include container1440;
   margin: 64px auto;
-  border: 1px solid red;
   min-height: 500px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  @media screen and (max-width: 500px){
+  @media screen and (max-width: 500px) {
     display: block;
     margin: 50px 20px;
   }
 
-  .avatar {
+  &__avatar {
     position: relative;
     max-width: 76%;
     width: 100%;
     min-height: 718px;
 
-    @media screen and (max-width: 500px){
+    @media screen and (max-width: 500px) {
       min-height: 518px;
     }
 
@@ -29,7 +28,7 @@
     }
   }
 
-  .content {
+  &__content {
 
     .hello {
       @include title;
@@ -38,19 +37,12 @@
     }
 
     .title {
-      color: #000;
-      text-transform: uppercase;
+      @include text32;
       margin: 0;
-      font-family: Inter, sans-serif;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 32px;
-      line-height: 136.02%;
-      letter-spacing: .8px;
 
       &_style {
         margin-bottom: 44px;
-        @media screen and (max-width: 500px){
+        @media screen and (max-width: 500px) {
           margin-bottom: 50px;
         }
       }
@@ -73,16 +65,10 @@
     }
 
     .open {
-      color: #000;
-      font-family: Inter, sans-serif;
-      text-transform: uppercase;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 32px;
+      @include text32;
       margin: 88px 0 0;
-      letter-spacing: .4px;
-      line-height: 136%;
-      @media screen and (max-width: 500px){
+
+      @media screen and (max-width: 500px) {
         margin-top: 50px;
       }
     }
