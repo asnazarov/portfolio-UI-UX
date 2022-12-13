@@ -19,6 +19,8 @@ export default function Home() {
         <meta property="og:image:width" content="800" />
         <meta property="og:image:height" content="630" />
         <meta property='og:description' content="Сюда пожно добавить описание страницы." />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:url" content="https://n-web-d.ru/" />
         {/*<meta name="description" content="Сюда пожно добавить описание страницы." />*/}
         <link rel="shortcut icon" href={favicon.src} type="image/x-icon"/>
         {/* <!-- Yandex.Metrika counter -->*/}
