@@ -13,11 +13,10 @@ export default function Home() {
   return (
     <div>
       <Head>
-        {/*<meta name="viewport" content="width=device-width, initial-scale=1"/>*/}
-        {/*<title>Портфолио А.С. Назарова</title>*/}
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <meta property="og:title" content="Портфолио А.С. Назарова." key="title" />
         <meta property="og:image" content={photo.src}/>
-        <meta property="og:image:width" content="400" />
+        <meta property="og:image:width" content="800" />
         <meta property="og:image:height" content="630" />
         <meta property='og:description' content="Сюда пожно добавить описание страницы." />
         {/*<meta name="description" content="Сюда пожно добавить описание страницы." />*/}
