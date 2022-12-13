@@ -16,11 +16,12 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <meta property="og:title" content="Портфолио А.С. Назарова." key="title" />
         <meta property="og:image" content={photo.src}/>
-        <meta property="og:image:width" content="800" />
-        <meta property="og:image:height" content="630" />
+        <meta property="og:image:width" content="1000" />
+        <meta property="og:image:height" content="830" />
         <meta property='og:description' content="Сюда пожно добавить описание страницы." />
         <meta property="og:image:type" content="image/jpeg" />
         <meta property="og:url" content="https://n-web-d.ru/" />
+        <meta property="og:type" content="website" />
         {/*<meta name="description" content="Сюда пожно добавить описание страницы." />*/}
         <link rel="shortcut icon" href={favicon.src} type="image/x-icon"/>
         {/* <!-- Yandex.Metrika counter -->*/}
