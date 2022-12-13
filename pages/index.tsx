@@ -4,10 +4,10 @@ import Header from "../src/components/Header/Header";
 import favicon from '../public/favicon.ico'
 import About from "../src/features/About/About";
 import Script from "next/script";
-import photo from '../src/assets/img.png'
 import Contacts from "../src/features/Contacts/Contacts";
 import Projects from "../src/features/Projects/Projects";
 import StylesWeb from "../src/features/StylesWeb/StylesWeb";
+import photo from '../src/assets/img.png'
 
 export default function Home() {
   return (
@@ -17,7 +17,7 @@ export default function Home() {
         {/*<title>Портфолио А.С. Назарова</title>*/}
         <meta property="og:title" content="Портфолио А.С. Назарова." key="title" />
         {/*<meta property="og:image" content={'../src/assets/img.png'}/>*/}
-        {/*<meta property="og:image" content='https://ibb.co/Ht332zS'/>*/}
+        <meta property="og:image" content={photo.src}/>
         <meta content="https://assets.vercel.com/image/upload/v1662090959/front/nextjs/twitter-card.png" property="og:image" />
         <meta property='og:description' content="Сюда пожно добавить описание страницы." />
         {/*<meta name="description" content="Сюда пожно добавить описание страницы." />*/}
