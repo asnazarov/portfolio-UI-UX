@@ -1,10 +1,11 @@
 
 .about {
-  margin: 80px 50px;
+  margin: 64px 50px;
   min-height: 500px;
-  //border: 1px solid greenyellow;
-  display: flex;
-  gap: 0 170px;
+  //display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  //gap: 0 170px;
   @media screen and (max-width: 500px){
     display: block;
     margin: 50px 20px;
@@ -12,7 +13,7 @@
 
   .avatar {
     position: relative;
-    max-width: 486px;
+    max-width: 76%;
     width: 100%;
     min-height: 718px;
 
@@ -36,6 +37,7 @@
       font-weight: 500;
       font-size: 86px;
       margin-bottom: 32px;
+      margin-top: 134px;
     }
 
     .title {
@@ -46,9 +48,11 @@
       font-style: normal;
       font-weight: 400;
       font-size: 32px;
+      line-height: 136.02%;
+      letter-spacing: .8px;
 
       &_style {
-        margin-bottom: 88px;
+        margin-bottom: 44px;
         @media screen and (max-width: 500px){
           margin-bottom: 50px;
         }
@@ -62,8 +66,9 @@
       font-style: normal;
       font-weight: 500;
       font-size: 16px;
-      max-width: 355px;
+      max-width: 357px;
       margin: 15px 0 0;
+      letter-spacing: 0.2px;
 
       svg {
         margin-right: 11px;
@@ -78,6 +83,8 @@
       font-weight: 500;
       font-size: 32px;
       margin: 88px 0 0;
+      letter-spacing: .4px;
+      line-height: 136%;
       @media screen and (max-width: 500px){
         margin-top: 50px;
       }

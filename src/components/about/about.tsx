@@ -17,7 +17,7 @@ const About = () => {
         <h1 className={`${styles.title} ${styles.title_style}`}>Я Ui/Ux дизайнер из санкт-петербурга</h1>
         <p className={styles.specialization}><Arrow_1 /> Специализация</p>
         <p className={styles.specialization}>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-        <p className={styles.open}>Открыта к предложениями по сотрудничеству</p>
+        <p className={styles.open}>Открыта к предложениями <br/> по сотрудничеству</p>
       </div>
     </section>
   )
