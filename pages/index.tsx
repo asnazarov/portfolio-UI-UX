@@ -5,13 +5,18 @@ import favicon from '../public/favicon.ico'
 import About from "../src/components/about/about";
 import Projects from "../src/components/projects/projects";
 import Script from "next/script";
+import photo from '../src/assets/img.png'
 
 export default function Home() {
   return (
     <div>
       <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <title>Портфолио А.С. Назарова</title>
-        <meta name="description" content="Сюда пожно добавить описание страницы сайта столько слов сколько хош. Сюда пожно добавить описание страницы сайта столько слов сколько хош.  Сюда пожно добавить описание страницы сайта столько слов сколько хош.  Сюда пожно добавить описание страницы сайта столько слов сколько хош.  Сюда пожно добавить описание страницы сайта столько слов сколько хош.   "/>
+        <meta property="og:image"
+              content={'../src/assets/img.png'}/>
+        <meta name="description"
+              content="Сюда пожно добавить описание страницы сайта столько слов сколько хош. Сюда пожно добавить описание страницы сайта столько слов сколько хош.  Сюда пожно добавить описание страницы сайта столько слов сколько хош.  Сюда пожно добавить описание страницы сайта столько слов сколько хош.  Сюда пожно добавить описание страницы сайта столько слов сколько хош.   "/>
         <link rel="shortcut icon" href={favicon.src} type="image/x-icon"/>
         {/* <!-- Yandex.Metrika counter -->*/}
         <Script
