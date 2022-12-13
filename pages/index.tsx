@@ -18,7 +18,7 @@ export default function Home() {
         <meta property="og:title" content="Портфолио А.С. Назарова." key="title" />
         {/*<meta property="og:image" content={'../src/assets/img.png'}/>*/}
         {/*<meta property="og:image" content='https://ibb.co/Ht332zS'/>*/}
-        <meta content="https://assets.vercel.com/image/upload/v1662090959/front/nextjs/twitter-card.png" property="og:image">
+        <meta content="https://assets.vercel.com/image/upload/v1662090959/front/nextjs/twitter-card.png" property="og:image" />
         <meta property='og:description' content="Сюда пожно добавить описание страницы." />
         {/*<meta name="description" content="Сюда пожно добавить описание страницы." />*/}
         <link rel="shortcut icon" href={favicon.src} type="image/x-icon"/>
