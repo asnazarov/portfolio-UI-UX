@@ -1,11 +1,13 @@
+@import "src/styles/mixins";
+@import "src/styles/fonts";
 
 .about {
-  margin: 64px 50px;
+  @include container1440;
+  margin: 64px auto;
+  border: 1px solid red;
   min-height: 500px;
-  //display: flex;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  //gap: 0 170px;
   @media screen and (max-width: 500px){
     display: block;
     margin: 50px 20px;
@@ -30,12 +32,7 @@
   .content {
 
     .hello {
-      color: #000;
-      text-transform: uppercase;
-      font-family: Inter, sans-serif;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 86px;
+      @include title;
       margin-bottom: 32px;
       margin-top: 134px;
     }
