@@ -2,10 +2,11 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Header from "../src/components/Header/Header";
 import favicon from '../public/favicon.ico'
-import About from "../src/components/about/about";
-import Projects from "../src/components/projects/projects";
+import About from "../src/features/About/About";
 import Script from "next/script";
 import photo from '../src/assets/img.png'
+import Contacts from "../src/features/Contacts/Contacts";
+import Projects from "../src/features/Projects/Projects";
 
 export default function Home() {
   return (
@@ -48,8 +49,8 @@ export default function Home() {
       <Header/>
       <main>
         <About/>
-        <Projects/>
-
+        <Projects />
+        <Contacts />
       </main>
 
     </div>

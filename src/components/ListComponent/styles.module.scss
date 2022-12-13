@@ -1,0 +1,41 @@
+@import "../../styles/mixins";
+@import "../../styles/fonts";
+
+
+.list {
+  max-width: 82%;
+  padding-left: 0;
+  margin: 0 0 50px 0;
+
+  &__item {
+    position: relative;
+    padding: 24px 0 0 0;
+    border-top: 1px solid #000000;
+    list-style-type: none;
+    margin-bottom: 46px;
+  }
+
+  &__description {
+    position: absolute;
+    margin: 0;
+    right: 0;
+    top: 0;
+    text-transform: uppercase;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 136%;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    @include text32;
+    letter-spacing: .3px;
+
+    svg {
+      margin-left: 42px;
+    }
+  }
+}

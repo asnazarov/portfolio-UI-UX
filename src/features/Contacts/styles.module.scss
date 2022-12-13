@@ -1,0 +1,14 @@
+@import "../../styles/mixins";
+@import "../../styles/fonts";
+
+.contacts {
+  @include container1440;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 120px 0;
+
+  &__title {
+    @include title;
+    margin: 0;
+  }
+}
