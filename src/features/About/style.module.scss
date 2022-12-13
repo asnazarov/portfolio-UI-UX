@@ -31,13 +31,13 @@
   &__content {
 
     .hello {
-      @include title;
+      @include textBig;
       margin-bottom: 32px;
       margin-top: 134px;
     }
 
     .title {
-      @include text32;
+      @include textMedium;
       margin: 0;
 
       &_style {
@@ -49,15 +49,9 @@
     }
 
     .specialization {
-      color: #000;
-      text-transform: uppercase;
-      font-family: Inter, sans-serif;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 16px;
+      @include textSmall;
       max-width: 357px;
       margin: 15px 0 0;
-      letter-spacing: 0.2px;
 
       svg {
         margin-right: 11px;
@@ -65,7 +59,7 @@
     }
 
     .open {
-      @include text32;
+      @include textMedium;
       margin: 88px 0 0;
 
       @media screen and (max-width: 500px) {

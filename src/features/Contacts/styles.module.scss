@@ -10,7 +10,7 @@
   gap: 120px 0;
 
   &__title {
-    @include title;
+    @include textBig;
     margin: 0;
   }
 }

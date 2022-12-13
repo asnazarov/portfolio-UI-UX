@@ -1,10 +1,32 @@
 
 
-@mixin title {
+@mixin textBig {
   color: #000;
   text-transform: uppercase;
   font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 86px;
+  line-height: 120%;
+}
+
+@mixin textMedium {
+  color: #000;
+  text-transform: uppercase;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 136%;
+  letter-spacing: .6px;
+}
+
+@mixin textSmall {
+  color: #000;
+  text-transform: uppercase;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.2px;
 }
