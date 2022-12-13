@@ -3,6 +3,8 @@
 
 .contacts {
   @include container1440;
+  margin-top: 210px;
+  margin-bottom: 210px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 120px 0;

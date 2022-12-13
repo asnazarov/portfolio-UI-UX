@@ -1,0 +1,44 @@
+@import "../../styles/mixins";
+@import "../../styles/fonts";
+
+
+.stylesWeb {
+  @include container1440;
+  margin-top: 210px;
+  margin-bottom: 210px;
+  //display: grid;
+  //grid-template-columns: repeat(2, 1fr);
+  //gap: 120px 0;
+
+
+  &__title {
+    @include title;
+    margin: 0 0 120px 0;
+  }
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0 80px;
+
+  &__block {
+    display: flex;
+    gap: 0 20px;
+  }
+
+  &__img {
+    position: relative;
+
+
+    img {
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__description {
+    @include text32;
+    margin: 0;
+  }
+}

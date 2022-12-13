@@ -7,6 +7,7 @@ import Script from "next/script";
 import photo from '../src/assets/img.png'
 import Contacts from "../src/features/Contacts/Contacts";
 import Projects from "../src/features/Projects/Projects";
+import StylesWeb from "../src/features/StylesWeb/StylesWeb";
 
 export default function Home() {
   return (
@@ -51,6 +52,7 @@ export default function Home() {
         <About/>
         <Projects />
         <Contacts />
+        <StylesWeb/>
       </main>
 
     </div>
