@@ -14,7 +14,7 @@ export default function Home() {
     <div>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <meta property="og:title" content="Портфолио А.С. Назарова." key="title" />
+        <meta property="og:title" content="Портфолио А.С. Назарова" key="title" />
         <meta property="og:image" content={photo.src}/>
         <meta property="og:image:width" content="1000" />
         <meta property="og:image:height" content="830" />
