@@ -17,8 +17,7 @@ export default function Home() {
         <title>Портфолио А.С. Назарова</title>
         {/*<meta property="og:image"*/}
         {/*      content={'../src/assets/img.png'}/>*/}
-        <meta name="description"
-              content="Сюда пожно добавить описание страницы сайта столько слов сколько хош. Сюда пожно добавить описание страницы сайта столько слов сколько хош.  Сюда пожно добавить описание страницы сайта столько слов сколько хош.  Сюда пожно добавить описание страницы сайта столько слов сколько хош.  Сюда пожно добавить описание страницы сайта столько слов сколько хош.   "/>
+        <meta name="description" content="Сюда пожно добавить описание страницы." />
         <link rel="shortcut icon" href={favicon.src} type="image/x-icon"/>
         {/* <!-- Yandex.Metrika counter -->*/}
         <Script
