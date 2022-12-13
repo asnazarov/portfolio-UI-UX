@@ -7,7 +7,7 @@ import Script from "next/script";
 import Contacts from "../src/features/Contacts/Contacts";
 import Projects from "../src/features/Projects/Projects";
 import StylesWeb from "../src/features/StylesWeb/StylesWeb";
-import photo from '../src/assets/ecc8608ebb9732b0a74cc79493f1a31f.jpeg'
+import photo from '../src/assets/525592315.jpg'
 
 export default function Home() {
   return (
@@ -15,11 +15,12 @@ export default function Home() {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <meta property="og:title" content="Портфолио А.С. Назарова" key="title" />
-        <meta property="og:image" content={photo.src}/>
-        <meta property="og:image:width" content="1000" />
-        <meta property="og:image:height" content="830" />
         <meta property='og:description' content="Сюда пожно добавить описание страницы." />
-        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image" content={photo.src}/>
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta name="viewport" content="width=1024" />
+        <meta property="og:image:type" content="image/jpg" />
         <meta property="og:url" content="https://n-web-d.ru/" />
         <meta property="og:type" content="website" />
         {/*<meta name="description" content="Сюда пожно добавить описание страницы." />*/}
