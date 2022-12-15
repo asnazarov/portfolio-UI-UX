@@ -24,6 +24,19 @@
 
   &__oboi {
     position: relative;
+    max-height: 509px;
+    @media screen and (max-width: $media1280) {
+      max-height: 384px;
+    }
+    @media all and (max-width: $media1024) {
+      max-height: 300px;
+    }
+    @media handheld and (max-width: $media768) {
+      max-height: 350px;
+    }
+    @media handheld and (max-width: $media400) {
+      max-height: 168px;
+    }
 
     img {
       object-fit: cover;
