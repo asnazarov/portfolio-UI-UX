@@ -24,7 +24,7 @@ const StylesWeb = () => {
                       </li>
                     ))}
                   </ul>
-                  <ul className={styles.content__list}>
+                  <ul className={`${styles.content__list} ${styles.content__list_type}`}>
                     {proj.description?.list_2?.map(el => (
                       <li className={styles.content__listItem}>{el}</li>
                     ))}
