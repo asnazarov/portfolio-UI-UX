@@ -1,25 +1,37 @@
 @import "src/styles/mixins";
-
+@import "src/styles/vars";
 
 
 .header {
   border-bottom: 1px solid #000;
 }
+
 .nav {
   @include container1440;
-  padding: 0 30px;
-  margin-top: 42px;
-  margin-bottom: 16px;
+  margin-top: 30px;
+  margin-bottom: 12px;
 
   .list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 0 150px;
+    grid-gap: 0 150px;
     padding-left: 0;
     margin: 0 0 0 auto;
     list-style-type: none;
 
-    @media screen and (max-width: 500px){
+    @media screen and (max-width: $media1280) {
+      grid-gap: 0 270px;
+    }
+
+    @media all and (max-width: $media1024) {
+      grid-gap: 0 210px;
+      grid-template-columns: repeat(3, 1fr);
+      div {
+        display: none;
+      }
+    }
+
+    @media screen and (max-width: 500px) {
       display: block;
     }
 
@@ -29,6 +41,10 @@
       font-size: 20px;
       text-align: end;
       text-transform: uppercase;
+
+      @media all and (max-width: $media1024) {
+        //text-align: center;
+      }
     }
   }
 }

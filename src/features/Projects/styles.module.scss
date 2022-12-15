@@ -3,11 +3,15 @@
 
 .projects {
   @include container1440;
-  margin-top: 210px;
-  margin-bottom: 210px;
+  margin: 210px auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 120px 0;
+  grid-gap: 120px 0;
+
+  @media all and (max-width: $media1024){
+    margin: 180px auto;
+    grid-gap: 90px 0;
+  }
 
   @media screen and (max-width: 500px) {
     margin: 50px 20px;
@@ -26,7 +30,5 @@
       object-position: center;
     }
   }
-
-
 
 }

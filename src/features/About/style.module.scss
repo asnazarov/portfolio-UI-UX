@@ -1,12 +1,17 @@
 @import "../../styles/mixins";
 @import "../../styles/fonts";
+@import "src/styles/vars";
 
 .about {
   @include container1440;
-  margin: 64px auto;
+  margin: 64px auto 210px;
   min-height: 500px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  @media all and (max-width: $media1024){
+    margin-bottom: 180px;
+  }
+
   @media screen and (max-width: 500px) {
     display: block;
     margin: 50px 20px;
@@ -17,6 +22,13 @@
     max-width: 76%;
     width: 100%;
     min-height: 718px;
+
+    @media screen and (max-width: $media1280){
+      max-width: 82%;
+    }
+    @media all and (max-width: $media1024){
+      min-height: 551px;
+    }
 
     @media screen and (max-width: 500px) {
       min-height: 518px;
@@ -30,10 +42,21 @@
 
   &__content {
 
+    @media all and (max-width: $media1024){
+      padding-left: 10px;
+    }
+
     .hello {
       @include textBig;
       margin-bottom: 32px;
       margin-top: 134px;
+
+      @media screen and (max-width: $media1280){
+        margin-top: 55px;
+      }
+      @media screen and (max-width: $media1024){
+        margin-top: 0;
+      }
     }
 
     .title {
@@ -55,6 +78,10 @@
 
       svg {
         margin-right: 11px;
+      }
+
+      @media all and (max-width: $media1024){
+        max-width: none;
       }
     }
 
