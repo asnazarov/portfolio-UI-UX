@@ -1,5 +1,5 @@
 
-const Arrow_2 = () => {
+const Arrow_2_svg = () => {
 
   return (
     <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -8,4 +8,4 @@ const Arrow_2 = () => {
   )
 }
 
-export default Arrow_2
+export default Arrow_2_svg

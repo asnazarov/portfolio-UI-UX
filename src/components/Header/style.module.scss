@@ -4,35 +4,52 @@
 
 .header {
   border-bottom: 1px solid #000;
+
+  @media (max-width: $media500){
+    border-bottom: transparent;
+  }
 }
 
 .nav {
   @include container1440;
-  margin-top: 30px;
-  margin-bottom: 12px;
+  margin-top: 26px;
+  margin-bottom: 7px;
+
+  @media (max-width: $media500) {
+    margin: 0;
+    padding-right: 7px;
+  }
+
+  &__burger {
+    display: none;
+    @media screen and (max-width: $media500) {
+      display: flex;
+      justify-content: flex-end;
+      width: 20%;
+      margin-left: auto;
+      flex-shrink: initial;
+      padding: 15px;
+    }
+  }
 
   .list {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 0 150px;
+    grid-template-columns: repeat(3, 1fr);
     padding-left: 0;
     margin: 0 0 0 auto;
     list-style-type: none;
 
-    @media screen and (max-width: $media1280) {
-      grid-gap: 0 270px;
+    @media all and (max-width: 850px) {
+      display: flex;
+      justify-content: space-between;
+      gap: 0;
     }
 
-    @media all and (max-width: $media1024) {
-      grid-gap: 0 210px;
-      grid-template-columns: repeat(3, 1fr);
-      div {
-        display: none;
+    @media screen and (max-width: $media500) {
+      display: none;
+      svg {
+        padding: 15px;
       }
-    }
-
-    @media screen and (max-width: 500px) {
-      display: block;
     }
 
     .link {
@@ -41,6 +58,8 @@
       font-size: 20px;
       text-align: end;
       text-transform: uppercase;
+      border: 1px solid red;
+      padding: 4px;
 
       @media all and (max-width: $media1024) {
         //text-align: center;

@@ -11,6 +11,12 @@
   @media all and (max-width: $media1024) {
     font-size: 64px;
   }
+  @media (max-width: $media768) {
+    font-size: 86px;
+  }
+  @media (max-width: $media500) {
+    font-size: 48px;
+  }
 }
 
 @mixin textMedium {
@@ -24,6 +30,12 @@
   letter-spacing: .6px;
   @media all and (max-width: $media1024) {
     font-size: 24px;
+  }
+  @media (max-width: $media768) {
+    font-size: 32px;
+  }
+  @media (max-width: $media500) {
+    font-size: 20px;
   }
 }
 

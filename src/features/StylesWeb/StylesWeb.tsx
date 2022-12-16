@@ -2,8 +2,8 @@ import styles from './styles.module.scss'
 import Image from "next/image";
 import img from '../../assets/ecc8608ebb9732b0a74cc79493f1a31f.jpeg'
 import {listProjects} from "../../data";
-import arrow_1 from "../../assets/svg/Arrow_1";
-import Arrow_1 from "../../assets/svg/Arrow_1";
+import arrow_1 from "../../assets/svg/Arrow_1_svg";
+import Arrow_1_svg from "../../assets/svg/Arrow_1_svg";
 
 const StylesWeb = () => {
 
@@ -20,7 +20,7 @@ const StylesWeb = () => {
                   <ul className={styles.content__list}>
                     {proj.description?.list_1?.map(el => (
                       <li className={`${styles.content__listItem} ${styles.content__listItem_listType}`} style={{whiteSpace: "nowrap"}}>
-                        <span><Arrow_1/></span>{el}
+                        <span><Arrow_1_svg/></span>{el}
                       </li>
                     ))}
                   </ul>

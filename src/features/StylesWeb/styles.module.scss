@@ -9,6 +9,12 @@
   @media all and (max-width: $media1024) {
     margin: 180px auto;
   }
+  @media (max-width: $media768) {
+    margin: 160px auto;
+  }
+  @media (max-width: $media500) {
+    margin: 100px auto;
+  }
 
   &__title {
     @include textBig;
@@ -16,6 +22,12 @@
 
     @media all and (max-width: $media1024) {
       margin-bottom: 90px;
+    }
+    @media (max-width: $media768) {
+      margin-bottom: 80px;
+    }
+    @media (max-width: $media500) {
+      margin-bottom: 64px;
     }
   }
 }
@@ -31,6 +43,14 @@
   }
   @media all and (max-width: $media1024) {
     grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: $media768) {
+    display: flex;
+    flex-direction: column;
+    gap: 40px 0;
+  }
+  @media (max-width: $media500) {
+    gap: 33px 0;
   }
 
   &__blockWrap {
@@ -49,6 +69,13 @@
       margin-top: 32px;
       flex-direction: column;
     }
+    @media (max-width: $media768) {
+      margin-top: 48px;
+      gap: 32px 0;
+    }
+    @media (max-width: $media500) {
+      margin-top: 40px;
+    }
   }
 
   &__list {
@@ -59,6 +86,9 @@
     &_type {
       @media all and (max-width: $media1024) {
         padding-left: 20px;
+      }
+      @media (max-width: $media500) {
+        padding-left: 26px;
       }
     }
   }
@@ -79,6 +109,9 @@
       @media all and (max-width: $media1024) {
         margin-bottom: 18px;
       }
+      @media (max-width: $media768) {
+        margin-bottom: 30px;
+      }
     }
 
     span {
@@ -95,11 +128,14 @@
     @media all and (max-width: $media1024) {
       max-height: 238px;
     }
-    @media handheld and (max-width: $media768) {
+    @media (max-width: $media768) {
+      min-height: 350px;
       max-height: 350px;
     }
-    @media handheld and (max-width: $media400) {
+    @media (max-width: $media500) {
+      min-height: 170px;
       max-height: 170px;
+      order: -1;
     }
 
     img {
@@ -111,5 +147,9 @@
   &__description {
     @include textMedium;
     margin: 0;
+
+    @media (max-width: $media768) {
+      max-width: 500px;
+    }
   }
 }

@@ -1,10 +1,8 @@
 import styles from './styles.module.scss'
 import Link from "next/link";
-import Arrow_2 from "../../assets/svg/Arrow_2";
+import Arrow_2_svg from "../../assets/svg/Arrow_2_svg";
 import {FC} from "react";
 import {listType} from "../../types";
-
-
 
 type OwnPropertyType = {
   list: listType,
@@ -19,22 +17,10 @@ const ListComponent:FC<OwnPropertyType> = (props) => {
         props.list?.map(el => (
           <li className={styles.list__item} key={el.id}>
             {el.tag && <p className={styles.list__description}>{el.tag}</p>}
-            <Link className={styles.list__link} href={'/'}>{el.text} <Arrow_2/></Link>
+            <Link className={styles.list__link} href={'/'}>{el.text}&#8194;<Arrow_2_svg/></Link>
           </li>
         ))
       }
-      {/*<li className={styles.list__item}>*/}
-      {/*  <Link className={styles.list__link} href={'/'}>стили в веб-дизайне <Arrow_2/></Link>*/}
-      {/*</li>*/}
-      {/*<li className={styles.list__item}>*/}
-      {/*  <Link className={styles.list__link} href={'/'}>сайт гастроэнтеролога <Arrow_2/></Link>*/}
-      {/*</li>*/}
-      {/*<li className={styles.list__item}>*/}
-      {/*  <Link className={styles.list__link} href={'/'}>Чат-бот «ЭкоСбор» <Arrow_2/></Link>*/}
-      {/*</li>*/}
-      {/*<li className={styles.list__item}>*/}
-      {/*  <Link className={styles.list__link} href={'/'}>стили в веб-дизайне <Arrow_2/></Link>*/}
-      {/*</li>*/}
     </ul>
   )
 }
