@@ -12,6 +12,7 @@
 
 .nav {
   @include container1440;
+  position: relative;
   margin-top: 26px;
   margin-bottom: 7px;
 
@@ -46,7 +47,6 @@
     }
 
     @media screen and (max-width: $media500) {
-      display: none;
       svg {
         padding: 15px;
       }
@@ -58,7 +58,6 @@
       font-size: 20px;
       text-align: end;
       text-transform: uppercase;
-      border: 1px solid red;
       padding: 4px;
 
       @media all and (max-width: $media1024) {

@@ -22,6 +22,7 @@
   }
 
   &__avatar {
+    user-select: none;
     position: relative;
     max-width: 76%;
     width: 100%;
@@ -53,7 +54,6 @@
   }
 
   &__content {
-
     @media all and (max-width: $media1024){
       padding-left: 10px;
     }
@@ -63,6 +63,7 @@
 
     .hello {
       @include textBig;
+      user-select: none;
       margin-bottom: 32px;
       margin-top: 134px;
 
