@@ -34,7 +34,6 @@ const Header = () => {
   const size = useWindowSize()
   const [open, setOpen] = useState<boolean>(false)
 
-  console.log(open)
 
   return (
     <header className={style.header}>
@@ -59,7 +58,6 @@ const Header = () => {
             ))}
           </ul>
         )}
-
       </nav>
 
 

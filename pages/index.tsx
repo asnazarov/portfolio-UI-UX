@@ -13,9 +13,9 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <meta charSet="utf-8" />
-
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
         <meta name="twitter:card" content="summary" key="twcard" />
         <meta name="twitter:creator" content={photo.src} key="twhandle" />
 
@@ -25,11 +25,9 @@ export default function Home() {
         <meta property="og:image" content={photo.src}/>
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta name="viewport" content="width=1024" />
         <meta property="og:image:type" content="image/jpg" />
         <meta property="og:url" content="https://n-web-d.ru/" />
         <meta property="og:type" content="website" />
-        {/*<meta name="description" content="Сюда пожно добавить описание страницы." />*/}
         <link rel="shortcut icon" href={favicon.src} type="image/x-icon"/>
         {/* <!-- Yandex.Metrika counter -->*/}
         <Script
