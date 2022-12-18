@@ -20,12 +20,12 @@ const nav: NavType = [
   {
     id: 2,
     text: 'Проекты',
-    link: '/'
+    link: '/projects'
   },
   {
     id: 3,
     text: 'Контакты',
-    link: '/'
+    link: '/contacts'
   },
 ]
 
