@@ -43,9 +43,10 @@ const Header = () => {
             <div className={style.nav__burger} onClick={() => setOpen(!open)}>
               <Burger_svg/>
             </div>
-            {
-              open && <NavModal nav={nav} handleClose={() => setOpen(!open)}/>
-            }
+            {/*{*/}
+            {/*  open && <NavModal nav={nav} handleClose={setOpen} open={open}/>*/}
+            {/*}*/}
+            <NavModal nav={nav} handleClose={setOpen} open={open}/>
           </>
         ) : (
           <ul className={style.list}>
