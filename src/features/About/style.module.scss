@@ -50,6 +50,7 @@
     img {
       object-fit: cover;
       object-position: center;
+      filter: grayscale(100%);
     }
   }
 

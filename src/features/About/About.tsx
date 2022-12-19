@@ -1,6 +1,6 @@
 import styles from './style.module.scss'
 import Image from "next/image";
-import ava from '../../assets/unsplash_C5NOq1BKlAk.png'
+import ava from '../../assets/photo_2022-12-20 00.51.10.jpeg'
 import Arrow_1_svg from "../../assets/svg/Arrow_1_svg";
 import {motion as m, AnimatePresence} from "framer-motion";
 
