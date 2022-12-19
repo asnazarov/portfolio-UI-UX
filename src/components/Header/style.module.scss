@@ -63,6 +63,7 @@ $text-color: darken($background-color, 10%);
   .burgerBox {
     margin-left: auto;
     z-index: 10;
+    right: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
