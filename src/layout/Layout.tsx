@@ -27,7 +27,7 @@ const Layout:FC<OwnPropertyProps> = (props) => {
 
         <title>{props.title ? props.title : 'Портфолио А.С. Назарова'}</title>
         <meta property="og:title" content={props.title ? props.title : 'Портфолио А.С. Назарова'} key="title"/>
-        <meta property='og:description' content="Сюда пожно добавить описание страницы."/>
+        <meta property='og:description' content={props.content ? props.content : 'Сюда пожно добавить описание страницы.'}/>
         <meta property="og:image" content={props.img ? props.img : photo.src}/>
         <meta property="og:image:width" content="1200"/>
         <meta property="og:image:height" content="630"/>
