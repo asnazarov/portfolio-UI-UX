@@ -1,6 +1,12 @@
 @import "src/styles/mixins";
 @import "src/styles/vars";
-
+$burger-size: 1.1rem;
+$burger-part-size: $burger-size * 0.125;
+$transition-speed: 0.35s;
+$background-color: rgb(45, 48, 58);
+$burger-box-color: darken($background-color, 7%);
+$burger-color: lighten($background-color, 50%);
+$text-color: darken($background-color, 10%);
 
 .header {
   border-bottom: 1px solid #000;
@@ -19,20 +25,6 @@
   @media (max-width: $media500) {
     margin: 0;
     padding-right: 7px;
-  }
-
-  &__burger {
-    display: none;
-    @media screen and (max-width: $media500) {
-      display: flex;
-      justify-content: flex-end;
-      width: 20%;
-      margin-left: auto;
-      flex-shrink: initial;
-      padding: 15px;
-      position: relative;
-      z-index: 50;
-    }
   }
 
   .list {
@@ -67,4 +59,91 @@
       }
     }
   }
+
+  .burgerBox {
+    margin-left: auto;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: $burger-size * 2;
+    height: $burger-size * 2;
+    //margin: 0 $burger-size $burger-size * 2 $burger-size; // This is just to space out the burgers from each other.
+    //background-color: $burger-box-color;
+    background-color: transparent;
+    border: transparent;
+    //border: $burger-part-size * 0.2 solid darken($background-color, 8%);
+    border-radius: 50%;
+  }
+  .burger {
+    position: relative;
+    width: $burger-size;
+    height: $burger-part-size;
+    transition: all $transition-speed;
+    > * {
+      position: absolute;
+      width: $burger-size;
+      height: $burger-part-size;
+      //background-color: $burger-color;
+      background-color: black;
+      transition: all $transition-speed;
+    }
+  }
+  .burgerTop {
+    transform: translateY(-250%);
+  }
+  .burgerBottom {
+    transform: translateY(250%);
+  }
+  .option {
+    &::after {
+      //content: 'twist fit';
+    }
+    .burgerTop {
+      left: 0;
+      transform-origin: 0 50%;
+    }
+    .burgerBottom {
+      //left: 0%;
+      transform-origin: 100% 50%;
+      left: auto;
+      right: 0;
+    }
+    .burgerMiddle {
+      left: 0;
+      transition: all $transition-speed * 0.75;
+    }
+    .burgerBoxHover {
+      .burgerTop {
+        top: 0;
+        left: $burger-size * 0.5;
+        width: 50%;
+        transform: rotate(-45deg);
+        transition:
+                transform $transition-speed,
+                top $transition-speed * 0.75,
+                left $transition-speed * 0.75,
+                width $transition-speed * 0.75 $transition-speed * 0.5;
+      }
+      .burgerBottom {
+        top: 0;
+        left: auto;
+        right: $burger-size * 0.5;
+        width: 50%;
+        transform: rotate(-45deg);
+        transition:
+                transform $transition-speed,
+                top $transition-speed * 0.75,
+                right $transition-speed * 0.75,
+                width $transition-speed * 0.75 $transition-speed * 0.5;
+      }
+      .burgerMiddle {
+        transform: rotate(45deg);
+      }
+    }
+  }
+
+
 }
+

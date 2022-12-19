@@ -40,12 +40,18 @@ const Header = () => {
       <nav className={style.nav}>
         {size.width < 500 ? (
           <>
-            <div className={style.nav__burger} onClick={() => setOpen(!open)}>
-              <Burger_svg/>
+            {/*<div className={style.nav__burger} onClick={() => setOpen(!open)}>*/}
+            {/*  <Burger_svg/>*/}
+            {/*</div>*/}
+            <div className={style.option}>
+              <div className={`${style.burgerBox} ${open && style.burgerBoxHover}`} onClick={() => setOpen(!open)}>
+                <div className={style.burger}>
+                  <div className={style.burgerTop}/>
+                  <div className={style.burgerMiddle}/>
+                  <div className={style.burgerBottom}/>
+                </div>
+              </div>
             </div>
-            {/*{*/}
-            {/*  open && <NavModal nav={nav} handleClose={setOpen} open={open}/>*/}
-            {/*}*/}
             <NavModal nav={nav} handleClose={setOpen} open={open}/>
           </>
         ) : (
