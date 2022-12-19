@@ -6,6 +6,7 @@ import Link from "next/link";
 
 type OwnPropertyType = {
   nav: NavType
+  handleClose: () => void
 }
 
 const NavModal: FC<OwnPropertyType> = (props) => {
@@ -14,8 +15,8 @@ const NavModal: FC<OwnPropertyType> = (props) => {
     <ul className={styles.list}>
       {
         props.nav?.map(el => (
-          <li className={styles.link} key={el.id}>
-            <Link href={el.link}>{el.text}</Link>
+          <li key={el.id} onClick={() => props.handleClose()}>
+            <Link className={styles.link} href={el.link}>{el.text}</Link>
           </li>
         ))
       }

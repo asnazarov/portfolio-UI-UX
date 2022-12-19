@@ -34,6 +34,7 @@ const Header = () => {
   const size = useWindowSize()
   const [open, setOpen] = useState<boolean>(false)
 
+  console.log(open)
 
   return (
     <header className={style.header}>
@@ -44,14 +45,14 @@ const Header = () => {
               <Burger_svg/>
             </div>
             {
-              open && <NavModal nav={nav}/>
+              open && <NavModal nav={nav} handleClose={() => setOpen(!open)}/>
             }
           </>
         ) : (
           <ul className={style.list}>
             {nav?.map(el => (
               <li className={style.link} key={el.id}>
-                <Link  href={el.link}>
+                <Link href={el.link}>
                   {el.text}
                 </Link>
               </li>
