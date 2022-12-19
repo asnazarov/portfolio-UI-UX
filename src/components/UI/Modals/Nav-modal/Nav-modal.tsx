@@ -18,7 +18,7 @@ const NavModal: FC<OwnPropertyType> = (props) => {
     // <AnimatePresence initial={false}>
       <m.ul
         initial={{y: '0%'}}
-        animate={props.open ? {y:'0%', opacity: 0} :  {y: '-100%', opacity: 1}}
+        animate={props.open ? {y:'0%', opacity: 1} :  {y: '-100%', opacity: 0}}
         transition={{duration: .5, ease: "easeOut"}}
         className={styles.list}>
         {
