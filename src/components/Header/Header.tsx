@@ -51,7 +51,7 @@ const Header = () => {
           <ul className={style.list}>
             {nav?.map(el => (
               <li className={style.link} key={el.id}>
-                <Link href={el.link}>
+                <Link  href={el.link}>
                   {el.text}
                 </Link>
               </li>

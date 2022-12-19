@@ -3,19 +3,20 @@
 
 .projects {
   @include container1440;
-  margin: 210px auto;
+  //margin: 210px auto;
+  margin: 64px auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 120px 0;
 
   @media all and (max-width: $media1024) {
-    margin: 180px auto;
+    //margin: 180px auto;
     grid-gap: 90px 0;
   }
 
   @media (max-width: $media768) {
     grid-template-columns: 1fr;
-    margin: 160px auto;
+    //margin: 160px auto;
     grid-gap: 80px 0;
     div {
       display: none
@@ -23,7 +24,8 @@
   }
 
   @media screen and (max-width: $media500) {
-    margin: 100px auto;
+    //margin: 100px auto;
+    margin: 0 auto 100px;
     grid-gap: 64px 0;
   }
 

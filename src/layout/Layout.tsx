@@ -1,10 +1,10 @@
 import Head from "next/head";
 import photo from "../assets/525592315.jpg";
 import favicon from "../../public/favicon.ico";
-import {motion as m} from "framer-motion";
-import About from "../features/About/About";
+import {AnimatePresence, motion as m} from "framer-motion";
 import Script from "next/script";
 import {FC, ReactNode} from "react";
+import Header from "../components/Header/Header";
 
 
 type OwnPropertyProps = {
@@ -14,7 +14,7 @@ type OwnPropertyProps = {
   children: ReactNode,
 }
 
-const Layout:FC<OwnPropertyProps> = (props) => {
+const Layout: FC<OwnPropertyProps> = (props) => {
 
   return (
     <div>
@@ -27,7 +27,8 @@ const Layout:FC<OwnPropertyProps> = (props) => {
 
         <title>{props.title ? props.title : 'Портфолио А.С. Назарова'}</title>
         <meta property="og:title" content={props.title ? props.title : 'Портфолио А.С. Назарова'} key="title"/>
-        <meta property='og:description' content={props.content ? props.content : 'Сюда пожно добавить описание страницы.'}/>
+        <meta property='og:description'
+              content={props.content ? props.content : 'Сюда пожно добавить описание страницы.'}/>
         <meta property="og:image" content={props.img ? props.img : photo.src}/>
         <meta property="og:image:width" content="1200"/>
         <meta property="og:image:height" content="630"/>
@@ -54,6 +55,7 @@ const Layout:FC<OwnPropertyProps> = (props) => {
           }}
         ></Script>
       </Head>
+      <Header/>
       <m.main
         initial={{y: '100%'}}
         animate={{y: '0%'}}
