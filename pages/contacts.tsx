@@ -7,7 +7,7 @@ import img from '../src/assets/img.png'
 const Cont = () => {
 
   return (
-    <Layout title={'Контакты А.С. Назарова'} content={'Описание страницы контакты'} img={img.src}>
+    <Layout title={'Контакты А.С. Назарова'} content={'Описание страницы контакты'} >
       <Contacts/>
     </Layout>
   )
